@@ -10,6 +10,8 @@ import PostCard from "componentes/PostCard"
 const Post = () => {
 
     const parametros = useParams()
+
+    //Procura o post que tem o id igual ao parametro da URL Ex:"/posts/1 === (post.id = 1)"
     
     const post = posts.find((post) => {
         return post.id === Number(parametros.id)
